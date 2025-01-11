@@ -24,7 +24,7 @@ jobs:
        run: go build -o go-web-app
       
      - name: Test
-       uses: go test ./..
+       run: go test ./..
       
   code-quality:  # Here doing the sonarqube 
     runs-on: ubuntu-latest
