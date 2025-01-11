@@ -24,7 +24,7 @@ jobs:
        run: go build -o go-web-app
       
      - name: Test
-       run: go test ./..
+       run: go test ./... # tells Go to look recursively for all sub-packages under the current directory
       
   code-quality:  # Here doing the sonarqube 
     runs-on: ubuntu-latest
