@@ -21,7 +21,7 @@ jobs:
        uses: actions/setup-go@v5
 
      - name: build
-       uses: go build -o go-web-app
+       run: go build -o go-web-app
       
      - name: Test
        uses: go test ./..
